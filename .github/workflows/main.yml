@@ -27,7 +27,7 @@ jobs:
         args: --unsigned-source --unsigned-changes
     - name: Move deb packages
       run: mkdir packages && mv ../*.deb packages/
-    - uses: actions/upload-artifact@v1
+    - uses: actions/upload-artifact@v2.2.2
       with:
         name: Debian packages
         path: packages
