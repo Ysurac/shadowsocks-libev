@@ -23,7 +23,7 @@ jobs:
     #  run: ./autogen.sh && dpkg-buildpackage -b -us -uc
     - name: Build Debian package
       run: ./autogen.sh
-    - uses: singingwolfboy/build-dpkg-buster@v1
+    - uses: singingwolfboy/build-dpkg-buster@v1.1
       id: build
       with:
         args: -b -us -uc
